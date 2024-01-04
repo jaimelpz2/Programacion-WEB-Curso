@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cómo hacer un arreglo de puntos</title>
+  <link rel="stylesheet" href="puntos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!--  
+ 
+  -->
+  <header class="hero">
+    <form id="formulario">
+
+      <div class="traslacion">
+        <p>Vector de Desplazamiento</p>
+        <p>Dx:</p>
+        <input class="campo" type="text" name="Dx">
+        <p>Dy:</p>
+        <input class="campo" type="text" name="Dy">
+        <input class="llenar" type="button" value="Trasladar" onclick="trasladar()">
+
+      </div>
+
+      <div class="escalamiento">
+        <p>Factor de Escalamiento</p>
+        <p>Sx:</p>
+        <input class="campo" type="text" name="Sx">
+        <p>Sy:</p>
+        <input class="campo" type="text" name="Sy">
+        <input class="llenar" type="button" value="Escalar" onclick="Escalar()">
+
+      </div>
+
+      <div class="rotacion">
+
+       <p>Angulo de Rotacion</p>
+       <p>Grados:</p>
+       <input class="campo" type="text" name="Grados">
+       <input class="llenar" type="button" value="Rotar" onclick="Rotar()">
+
+
+     </div>
+   </form>
+
+ </header><!-- <a href="#" class="cta">empieza un curso</a> -->
+
+
+ <!-- Lienzo para dibujar -->
+ <canvas id="lienzo" width="800px" height="800px" onmousedown="dibujar(event)" style="border: 1px solid;"> 
+ </canvas> <!-- La función dibujar se ejecuta cada que se hace clic sobre el lienzo -->
+
+ <p class="final">
+  <input id="color" type="color" onchange="cambiarColor()" /> <!-- Indicar el color de pintado --> 
+  <input class="llenar" type="button" value="Reiniciar" onclick="reiniciar()" /> <!-- comenzar de nuevo -->
+  <input class="llenar" type="button" value="Ver Arreglo" onclick="verArreglo()" />
+</p> <!-- ver el arreglo de puntos -->
+  <script src="puntos.js"></script>
+</body>
+
+</html>

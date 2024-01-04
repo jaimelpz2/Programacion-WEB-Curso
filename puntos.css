@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.hero{
+	width: 50%;
+	height: 50%;
+	margin-left: 1%;
+	
+}
+
+.traslacion{
+	padding-top: 2%;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 2%;
+}
+
+.escalamiento{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 2%;
+}
+
+.rotacion{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 2%;
+}
+
+
+.final{
+	width: 50%;
+	height: 50%;
+	display:flex;
+	justify-content: space-between;
+	padding-top: 1%;
+}
+
+.campo{
+	width: 70px;
+	height: 20px;
+	background-color: sandybrown;
+}
+
+.llenar{
+	width: 70px;
+	height: 20px;
+	background-color:teal;
+	color:white;
+	margin-left: 1%;
+}
+
+p{
+	padding-right: 1%;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Implementación del algoritmo de trazado de círculos</title>
+</head>
+<body>
+<!-- Archivo con la rutina para pintar círculos utilizando javascript -->
+<script src="P1_JACV_CirculoCambiante.js"></script>
+<!-- Lienzo para pintar los círculos -->
+<form id="f"> <!-- Formulario para introducir coordenadas y color del pixel -->
+		Radio<input name="y" type="text" size="2" />
+		color<input name="c" type="color" /> <!-- Indicar el color del punto -->
+		
+	</form>
+<canvas id="lienzo" width="400" height="400" onmousedown="dibujar(event)" style="background-color:#CCCCCC;">
+</canvas> <!-- La función dibujar se ejecuta con cada clic sobre el lienzo -->
+</body>
+</html>
